@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Baobab Gourmand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
+</head>
+
+<body>
+
+<header>
+    <h1>Le Baobab Gourmand</h1>
+    <nav>
+        <a class="specs" href="index.html">Accueil</a>
+        <a class="specs active" href="menu.html">Menu</a>
+        <a class="specs" href="about.html">À propos</a>
+        <a class="specs" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- BARRE DE FILTRES -->
+    <div class="filter-section">
+        <div class="filter-label">Filtrer par catégorie</div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="entrees">Entrées</button>
+            <button class="filter-btn" data-filter="plats">Plats principaux</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="boissons">Boissons</button>
+        </div>
+    </div>
+
+    <!-- Entrées -->
+    <section class="category-section" id="entrees" data-category="entrees">
+        <h2> Entrées</h2>
+        <table><tr>
+            <div class="menu">
+                <td><div class="plat">
+                    <img src="image/gesires.jpeg">
+                    <div class="digg">
+                        <h3>Gésiers</h3>
+                        <p>Gésiers de volaille sautés et carottes fondantes pour une entrée rustique.</p>
+                        <span>3000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/salade.jpeg">
+                    <div class="digg">
+                        <h3>Salade de Crevettes</h3>
+                        <p>Mélange croquant de crudités, crevettes marinées et touche d'agrumes rafraîchissante.</p>
+                        <span>4000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/oeuf.jpeg">
+                    <div class="digg">
+                        <h3>Œufs Mimosa</h3>
+                        <p>Œufs onctueux, touche de moutarde douce et herbes fraîches.</p>
+                        <span>2000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/aubergie.jpeg">
+                    <div class="digg">
+                        <h3>Aubergine</h3>
+                        <p>Aubergines grillées à l'huile d'olive, accompagnées de feta et de grenade.</p>
+                        <span>2000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+            </div>
+        </tr></table>
+    </section>
+
+    <!-- Plats -->
+    <section class="category-section" id="plats" data-category="plats">
+        <h2>Plats</h2>
+        <table><tr>
+            <div class="menu">
+                <td><div class="plat">
+                    <img src="image/WhatsApp Image 2026-04-27 at 19.05.59.jpeg">
+                    <div class="digg">
+                        <h3>Dibi Viande</h3>
+                        <p>Agneau grillé au feu de bois, servi avec des oignons frais et de la moutarde.</p>
+                        <span>10000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/vermicelle.jpeg">
+                    <div class="digg">
+                        <h3>Poulet Braisé</h3>
+                        <p>Poulet entier mariné et grillé, accompagné d'une garniture d'oignons et de poivrons.</p>
+                        <span>8000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/feuille.png">
+                    <div class="digg">
+                        <h3>Riz Sauce Feuille</h3>
+                        <p>Riz blanc servi avec une sauce aux feuilles de Saka-Saka et du poisson frit.</p>
+                        <span>7000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/couscous.jpg">
+                    <div class="digg">
+                        <h3>Couscous Marrocain</h3>
+                        <p>Un mélange généreux de semoule, de légumes fondants et de viande en sauce.</p>
+                        <span>5000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+            </div>
+        </tr></table>
+    </section>
+
+    <!-- Desserts -->
+    <section class="category-section" id="desserts" data-category="desserts">
+        <h2>Desserts</h2>
+        <table><tr>
+            <div class="menu">
+                <td><div class="plat">
+                    <img src="image/ngalakh.jpeg">
+                    <div class="digg">
+                        <h3>Ngalakh</h3>
+                        <p>Semoule de mil, pâte d'arachide, fruit du baobab et muscade.</p>
+                        <span>1000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/beignets.jpeg">
+                    <div class="digg">
+                        <h3>Beignets Gourmands</h3>
+                        <p>Petits beignets moelleux nappés d'un filet de chocolat fondant pour une pause sucrée.</p>
+                        <span>2000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/cake.jpeg">
+                    <div class="digg">
+                        <h3>Cake Moelleux Vanille</h3>
+                        <p>Un gâteau traditionnel généreux et fondant.</p>
+                        <span>3000 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/thaikry.jpeg">
+                    <div class="digg">
+                        <h3>Thiakry Royal</h3>
+                        <p>Un dessert traditionnel à base de semoule de mil et de lait caillé doux, agrémenté de raisins secs.</p>
+                        <span>1500 FCFA</span>
+                        <button onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+            </div>
+        </tr></table>
+    </section>
+
+    <!-- Boissons -->
+    <section class="category-section" id="boissons" data-category="boissons">
+        <h2>Boissons</h2>
+        <table><tr>
+            <div class="menu">
+                <td><div class="plat">
+                    <img src="image/bissap.png">
+                    <div class="digg">
+                        <h3>Jus de Bissap</h3>
+                        <p>Une infusion de fleurs d'hibiscus rouge intense, à la fois sucrée et acidulée, servie très fraîche pour un plaisir 100 % naturel.</p>
+                        <span>1000 FCFA</span>
+                        <button class="contact" onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/cafe choco.jpeg">
+                    <div class="digg">
+                        <h3>Café au Chocolat</h3>
+                        <p>L'alliance parfaite entre l'intensité d'un café corsé et la douceur d'un chocolat fondu, couronnée d'une mousse légère.</p>
+                        <span>1000 FCFA</span>
+                        <button class="contact" onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/hju.png">
+                    <div class="digg">
+                        <h3>Smoothie à la Fraise</h3>
+                        <p>Un mélange onctueux de fraises fraîches mixées, offrant une texture veloutée et un goût naturellement sucré.</p>
+                        <span>1000 FCFA</span>
+                        <button class="contact" onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+                <td><div class="plat">
+                    <img src="image/Bouye.png">
+                    <div class="digg">
+                        <h3>Jus de Bouye (Baobab)</h3>
+                        <p>Un nectar riche et crémeux extrait du fruit du baobab, aux notes douces et acidulées, riche en vitamines.</p>
+                        <span>1000 FCFA</span>
+                        <button class="contact" onclick="goContact('Burger')">Commander</button>
+                    </div>
+                </div></td>
+            </div>
+        </tr></table>
+    </section>
+
+</main>
+
+<br>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Baobab Gourmand</h3>
+            <p>Découvrez les saveurs authentiques de la cuisine africaine dans un cadre chaleureux.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Adresse</h4>
+            <p>12, Avenue Leopold Sedar Senghor,<br>Plateau, Dakar</p>
+            <p>+221 77 338 12 34</p>
+            <p>baobabgourmand@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>Horaires</h4>
+            <p>Lun-Ven : 12h00-23h00</p>
+            <p>Sam-Dim : 11h00-00h00</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Baobab Gourmand - Tous droits réservés</p>
+    </div>
+    <a href="Banniere.html"><span class="material-symbols-outlined">arrow_upward</span></a>
+</footer>
+
+<button class="btn-scroll-top" id="btnRetour" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
